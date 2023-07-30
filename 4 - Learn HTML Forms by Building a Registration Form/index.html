@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill in the form:</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name: <input type="text" id="name" placeholder="Your Name" required/></label>
+        <label id="email-label" for="email">Email: <input type="email" id="email"  placeholder="youremail@email.com" required/></label>
+        <label id="number-label" for="number">Age: <input type="number" id="number" min="1" max="120" placeholder="3" /></label>
+        <label for="dropdown">What is your major?
+          <select id="dropdown">
+            <option>Computer Science</option>
+            <option>Computer Networking</option>
+            <option>Information Technology</option>
+          </select>
+        </label>
+        <p>What is your gender?</p>
+        <label for="male"><input type="radio" name="gender" value="male" />Male</label>
+        <label for="female"><input type="radio" name="gender" value="female" />Female</label>
+        <label for="other"><input type="radio" name="gender" value="other" />Other</label>
+        <p>What languages do you speak?</p>
+        <label for="english"><input type="checkbox" name="language" value="english" />Other</label>
+        <label for="chinese"><input type="checkbox" name="language" value="chinese" />Chinese</label>
+        <label for="spanish"><input type="checkbox" name="language" value="spanish" />Spanish</label>
+        <p>Biography:</p>
+        <textarea placeholder="Put in your bio here..." rows="5" cols="50"></textarea>
+        <hr>
+        <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
